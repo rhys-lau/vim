@@ -63,11 +63,3 @@
     * gcc g++ 
     * include 
     * lib
-
-
-
-
-
-
-
-
