@@ -16,8 +16,9 @@
 # Install
 1. cmd
 ```
- cd c:\   
- git clone git://github.com/dotle/vim.git
+ md c:\vim
+ cd c:\vim
+ git clone https://github.com/dotle/vim.git
 ```
 2. copy **Vimtools** Dirctory. Add Path.
 3. input `PlugInstall`。
@@ -63,3 +64,4 @@
     * gcc g++ 
     * include 
     * lib
+
