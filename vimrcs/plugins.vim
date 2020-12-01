@@ -921,6 +921,8 @@ let g:which_key_map[";"] = {
           \'L':    'CalendarH',
           \},
       \'d':    'goto-current-dir',
+      \'f':    'enable-fold',
+      \'F':    'no-enable-fold',
       \'x':    'toBinary',
       \'X':    'toString',
       \'m':    'mouse mode = a',

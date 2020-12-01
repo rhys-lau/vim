@@ -99,6 +99,8 @@ nmap <leader>fs :w!<cr>
 nmap <leader>fa :wall<cr>
 nmap <leader>fh :nohlsearch<CR>
 
+map <leader>;f :set foldenable<cr>
+map <leader>;F :set nofoldenable<cr>
 map <leader>;x :%!xxd -g 1<cr>
 map <leader>;X :%!xxd -r<cr>
 map <leader>;m :set mouse=a<cr>
