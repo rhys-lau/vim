@@ -17,8 +17,7 @@
 1. cmd
 ```
  md c:\vim
- cd c:\vim
- git clone https://github.com/dotle/vim.git
+ git clone https://github.com/rhys-lau/vim.git
 ```
 2. copy **Vimtools** Dirctory. Add Path.
 3. input `PlugInstall`。
