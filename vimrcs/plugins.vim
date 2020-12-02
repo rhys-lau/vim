@@ -11,7 +11,7 @@ call plug#begin('~/plugged')
 " common plugin
 " -----------
 " Plug  'vim-scripts/mru.vim'
-" Plug  'jiangmiao/auto-pairs' "与vimlsp 有冲突
+Plug  'jiangmiao/auto-pairs' "与vimlsp 有冲突 20201202好像解决了，继续用
 Plug  'vim-scripts/Mark--Karkat'
 Plug  'liuchengxu/vim-which-key'
 Plug  'mhinz/vim-startify'
