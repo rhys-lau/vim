@@ -278,9 +278,10 @@ map <F10> :call Link()<CR>
 map <leader>pl :call Link()<CR>
 imap <F10> <ESC>:call Link()<CR>
 
-if has('gui_running') && has("win32")
-    map <F11> :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
-endif
+" 没用
+" if has('gui_running') && has("win32")
+"     map <F11> :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+" endif
 
 let s:LastShellReturn_C = 0
 let s:LastShellReturn_L = 0
