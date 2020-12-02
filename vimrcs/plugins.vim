@@ -45,7 +45,7 @@ Plug 'sgur/vim-textobj-parameter'
 "----------------------
 " Coding
 " ---------------------
-Plug  'Yggdroot/indentLine' "缩进对其线
+Plug  'Yggdroot/indentLine' "缩进对齐线
 Plug  'tell-k/vim-autopep8' "automatically formats Python code to conform to the PEP 8 style guide
 Plug  'godlygeek/tabular'  " 输入tabular /, 则以，为分隔符
 Plug  'plasticboy/vim-markdown' "markdown 支持
@@ -70,6 +70,8 @@ Plug  'OmniSharp/omnisharp-vim'     " c#支持
 "-----------------
 Plug  'easymotion/vim-easymotion'  "快速移动 使用<leader><leader>开头
 Plug  'derekwyatt/vim-fswitch' "头文件和文件切换 <leader>fg
+Plug  'justinmk/vim-sneak' "Jump to any location specified by two characters.
+
 "--------------
 " IDE features
 "--------------
@@ -78,7 +80,7 @@ Plug  'mhinz/vim-signify'
 Plug  'bling/vim-airline' "状态栏
 Plug  'vim-airline/vim-airline-themes'
 " Plug  'fholgado/minibufexpl.vim'  "minibuf
-Plug  'scrooloose/nerdtree' "文件树查看 <leader>ft F2
+Plug  'scrooloose/nerdtree' "文件树查看 <leader>tn F2
 Plug  'terryma/vim-multiple-cursors'  "多光标操作 选中之后c-n  全选中c-n 则为选中头  vip为全选
 Plug  'tpope/vim-surround'       "surround cs ds....
 Plug  'mbbill/undotree'         "undo  操作
