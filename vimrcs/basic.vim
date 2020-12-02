@@ -111,6 +111,7 @@ set clipboard=unnamed
 
 set completeopt=longest,menu "补全菜单的样式
 
+set selection=inclusive "mult-select需要
 " ------------------------------------------------------------------
 " color
 " ------------------------------------------------------------------
