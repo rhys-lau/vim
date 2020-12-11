@@ -122,7 +122,7 @@ filetype plugin indent on    " required
 nnoremap <silent><F2> :NERDTreeToggle<CR>
 inoremap <silent><F2> <ESC>:NERDTreeToggle<CR>
 nmap ge :NERDTreeToggle<CR>
-nnoremap <silent><Leader>tn :NERDTreeToggle<CR>
+nnoremap <silent><Leader>Tn :NERDTreeToggle<CR>
 nnoremap <silent><Leader>fd :NERDTreeFind<CR>
 let NERDTreeChDirMode=2
 "显示书签"
@@ -157,7 +157,7 @@ nmap <leader>Sc :SClose<cr>
 "AirlineTheme设置"
 "----------------------------
 let g:airline_theme='dark_minimal'
-nmap <leader>tl :AirlineToggle<cr>
+nmap <leader>Tl :AirlineToggle<cr>
 nmap <leader>ar :AirlineRefresh<cr>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1 " buffer 编号
@@ -201,7 +201,7 @@ map ,db :DoxBlock<CR>
 " tagbar
 " --------------------------------------------------
 "设置关闭和打开tagbar窗口的快捷键
-nnoremap <leader>tt :TagbarToggle<CR>
+nnoremap <leader>Tt :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_width = 25
 
@@ -540,7 +540,7 @@ let g:vimwiki_ext2syntax = {} "避免md类型识别成vimwiki类型
 let g:better_whitespace_enabled=1
 nmap <leader>xwe :EnableWhitespace<CR>
 nmap <leader>xwd :DisableWhitespace<CR>
-nmap <leader>tw :ToggleWhitespace<CR>
+nmap <leader>Tw :ToggleWhitespace<CR>
 nmap <leader>xws :StripWhitespace<CR>
 let g:better_whitespace_filetypes_blacklist=['text', 'markdown', 'vimwiki',
             \'diff', 'gitcommit', 'unite', 'qf', 'help', 'markdown','Dockerfile']
@@ -590,7 +590,7 @@ map <leader>pas :AsyncStop<cr>
 " -----------------------------------------------------------------
 " undotree
 " -----------------------------------------------------------------
-nnoremap <leader>tu :UndotreeToggle<cr>
+nnoremap <leader>Tu :UndotreeToggle<cr>
 " ------------------------------------------------------------------
 " preview windows
 " ------------------------------------------------------------------
@@ -1079,7 +1079,7 @@ let g:which_key_map.S    = {'name':'+session'}
 let g:which_key_map.s    = {'name':'+OmniSharp'}
 
 let g:which_key_map.t    = {
-      \ 'name' : '+tag/toggle' ,
+      \ 'name' : '+tag' ,
       \ 'b': 'search-tags-in-current-buffer',
       \ 'B': 'search-tags-in-project',
       \ 'c': 'run-ctags-R',
@@ -1088,6 +1088,8 @@ let g:which_key_map.t    = {
       \ 'g': 'show-tag-in-preview-window',
       \ 'v': 'search-tag-via-vista',
       \ }
+
+let g:which_key_map.T    = {'name':'+toggle'}
 
 let g:which_key_map.v    = {
       \ 'name' : '+wiki/vista' ,
