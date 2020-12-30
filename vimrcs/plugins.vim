@@ -412,7 +412,7 @@ nmap <leader>ps :Rooter <cr>
 " ----------------------------------------
 " vista.vim
 " --------------------------------------------------
-nmap  <leader>vv :Vista!!<CR>
+nmap  <leader>Tv :Vista!!<CR>
 " function! NearestMethodOrFunction() abort
 "   return get(b:, 'vista_nearest_method_or_function', '')
 " endfunction
@@ -1092,7 +1092,7 @@ let g:which_key_map.t    = {
 let g:which_key_map.T    = {'name':'+toggle'}
 
 let g:which_key_map.v    = {
-      \ 'name' : '+wiki/vista' ,
+      \ 'name' : '+wiki' ,
       \}
 
 let g:which_key_map['w'] = {
