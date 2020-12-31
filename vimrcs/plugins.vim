@@ -510,6 +510,7 @@ nmap <unique> <silent> <Leader>m? <Plug>MarkSearchAnyPrev
 "  vim-markdown
 "  ----------------------------------------------------------------
 map <leader>Mc :Toc<cr>
+let g:vim_markdown_conceal = 0 "link难以编辑问题，保留高亮显示
 
 " -----------------------------------------------------------------
 "  markdown-preview
