@@ -121,7 +121,7 @@ filetype plugin indent on    " required
 "F2开启和关闭树"
 nnoremap <silent><F2> :NERDTreeToggle<CR>
 inoremap <silent><F2> <ESC>:NERDTreeToggle<CR>
-nmap ge :NERDTreeToggle<CR>
+"nmap ge :NERDTreeToggle<CR>
 nnoremap <silent><Leader>Tn :NERDTreeToggle<CR>
 nnoremap <silent><Leader>fd :NERDTreeFind<CR>
 let NERDTreeChDirMode=2
