@@ -569,6 +569,16 @@ nmap <unique> <Leader>;cL <Plug>CalendarH
 " -----------------------------------------------------------------
 " map  <leader>em :MRU<cr>
 
+
+" -----------------------------------------------------------------
+" snipmate
+" -----------------------------------------------------------------
+" 0 or  1
+" To continue using the old parser, set g:snipMate.snippet_version (see
+" |SnipMate-options|) to 0 in your |vimrc|
+let g:snipMate = { 'snippet_version' : 1 }
+
+
 " -----------------------------------------------------------------
 " ultisnips
 " -----------------------------------------------------------------
