@@ -552,6 +552,10 @@ nmap <leader>ga :Git add %<CR>
 nmap <leader>gc :Git commit %<CR>
 nmap <leader>gC :Git commit .<CR>
 nmap <leader>gp :Git push .<CR>
+nmap <leader>gl :Gclog<CR>
+nmap <leader>gs :Git<CR>
+nmap <leader>gf :Git fetch<CR>
+nmap <leader>gb :Git blame<CR>
 let $GIT_ASKPASS = 'no'
 
 " -----------------------------------------------------------------
@@ -600,6 +604,8 @@ autocmd BufNewFile,BufRead *.py nmap <m-y> :w <cr>:AsyncRun -raw python %<cr>
 autocmd BufNewFile,BufRead *.py nmap <leader>pap :w <cr>:AsyncRun -raw python %<cr>
 map <leader>pas :AsyncStop<cr>
 
+" default updatetime 4000ms is not good for async update
+set updatetime=100
 " -----------------------------------------------------------------
 " undotree
 " -----------------------------------------------------------------
@@ -1001,22 +1007,22 @@ let g:which_key_map.f    = {
 let g:which_key_map.g = {
       \ 'name' : '+git/version-control' ,
       \ 'a' : 'git-add-current-file',
-      \ 'b' : ['Gblame'                 , 'fugitive-blame']             ,
       \ 'c' : 'commits-for-current-buffer',
       \ 'C' : 'fugitive-commit' ,
       \ 'd' : ['Gdiff'                  , 'fugitive-diff']              ,
       \ 'D' : ['SignifyDiff'            , 'fugitive-diff']              ,
       \ 'e' : ['Gedit'                  , 'fugitive-edit']              ,
-      \ 'f' : ['Gfetch'                 , 'fugitive-fetch']              ,
-      \ 'l' : ['Glog'                   , 'fugitive-log']               ,
       \ 'r' : ['Gread'                  , 'fugitive-read']              ,
-      \ 's' : ['Gstatus'                , 'fugitive-status']            ,
       \ 'w' : ['Gwrite'                 , 'fugitive-write']             ,
       \ 'P' : ['Gpull'                  , 'fugitive-pull']              ,
       \ 'y' : ['Goyo'                   , 'goyo-mode']         ,
       \}
 
 " \ 'p' : ['Gpush'                  , 'fugitive-push']              ,
+" \ 's' : ['Gstatus'                , 'fugitive-status']            ,
+"      \ 'f' : ['Gfetch'                 , 'fugitive-fetch']              ,
+"      \ 'b' : ['Gblame'                 , 'fugitive-blame']             ,
+"     \ 'l' : ['Glog'                   , 'fugitive-log']               ,
 
 let g:which_key_map.l    = {
       \'name': '+lsp',
