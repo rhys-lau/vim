@@ -551,7 +551,9 @@ let g:better_whitespace_filetypes_blacklist=['text', 'markdown', 'vimwiki',
 nmap <leader>ga :Git add %<CR>
 nmap <leader>gc :Git commit %<CR>
 nmap <leader>gC :Git commit .<CR>
+nmap <leader>gp :Git push .<CR>
 let $GIT_ASKPASS = 'no'
+
 " -----------------------------------------------------------------
 " source and header switch
 " -----------------------------------------------------------------
