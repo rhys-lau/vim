@@ -810,8 +810,8 @@ let g:ale_c_cppcheck_options = ''
 let g:ale_cpp_cppcheck_options = ''
 " 使用clangd对c和c++进行语法检查，对python使用pylint进行语法检查
  let g:ale_linters = {
- \   'cpp':        ['gcc'],
- \   'c':          ['gcc'],
+ \   'cpp':        ['cppcheck','gcc'],
+ \   'c':          ['cppcheck','gcc'],
  \   'python':     ['pylint'],
  \   'javascript': ['eslint'],
  \   'java':       ['eslint'],
