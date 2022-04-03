@@ -1012,10 +1012,11 @@ let g:which_key_map.g = {
       \ 'r' : ['Gread'                  , 'fugitive-read']              ,
       \ 's' : ['Gstatus'                , 'fugitive-status']            ,
       \ 'w' : ['Gwrite'                 , 'fugitive-write']             ,
-      \ 'p' : ['Gpush'                  , 'fugitive-push']              ,
       \ 'P' : ['Gpull'                  , 'fugitive-pull']              ,
       \ 'y' : ['Goyo'                   , 'goyo-mode']         ,
       \}
+
+" \ 'p' : ['Gpush'                  , 'fugitive-push']              ,
 
 let g:which_key_map.l    = {
       \'name': '+lsp',
