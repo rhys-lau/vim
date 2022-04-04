@@ -587,6 +587,7 @@ nmap <leader>ga :Git add %<CR>
 nmap <leader>gc :Git commit %<CR>
 nmap <leader>gC :Git commit .<CR>
 nmap <leader>gp :Git push .<CR>
+nmap <leader>gP :Git pull<CR>
 nmap <leader>gl :Gclog<CR>
 nmap <leader>gs :Git<CR>
 nmap <leader>gf :Git fetch<CR>
@@ -1049,10 +1050,10 @@ let g:which_key_map.g = {
       \ 'e' : ['Gedit'                  , 'fugitive-edit']              ,
       \ 'r' : ['Gread'                  , 'fugitive-read']              ,
       \ 'w' : ['Gwrite'                 , 'fugitive-write']             ,
-      \ 'P' : ['Gpull'                  , 'fugitive-pull']              ,
       \ 'y' : ['Goyo'                   , 'goyo-mode']         ,
       \}
 
+" \ 'P' : ['Gpull'                  , 'fugitive-pull']              ,
 " \ 'p' : ['Gpush'                  , 'fugitive-push']              ,
 " \ 's' : ['Gstatus'                , 'fugitive-status']            ,
 "      \ 'f' : ['Gfetch'                 , 'fugitive-fetch']              ,
