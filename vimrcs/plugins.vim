@@ -171,13 +171,48 @@ let g:airline#extensions#whitespace#enabled = 0 "不显示空白
 "easy mothing
 "--------------------------------------------------------------------------------
 let g:EasyMotion_smartcase = 1
+"
+"    <Plug>(easymotion-f) | <Leader>f{char}
+"    <Plug>(easymotion-F) | <Leader>F{char}
+"    <Plug>(easymotion-t) | <Leader>t{char}
+"    <Plug>(easymotion-T) | <Leader>T{char}
+"    <Plug>(easymotion-w) | <Leader>w
+"    <Plug>(easymotion-W) | <Leader>W
+"    <Plug>(easymotion-b) | <Leader>b
+"    <Plug>(easymotion-B) | <Leader>B
+"    <Plug>(easymotion-e) | <Leader>e
+"    <Plug>(easymotion-E) | <Leader>E
+"    <Plug>(easymotion-ge)| <Leader>ge
+"    <Plug>(easymotion-gE)| <Leader>gE
+"    <Plug>(easymotion-j) | <Leader>j
+"    <Plug>(easymotion-k) | <Leader>k
+"    <Plug>(easymotion-n) | <Leader>n
+"    <Plug>(easymotion-N) | <Leader>N
+"    <Plug>(easymotion-s) | <Leader>s
+
 map <Leader><leader>h <Plug>(easymotion-linebackward)
-" map <Leader><Leader>j <Plug>(easymotion-j)
-" map <Leader><Leader>k <Plug>(easymotion-k)
 map <Leader><leader>l <Plug>(easymotion-lineforward)
 " " 重复上一次操作, 类似repeat插件, 很强大
 map <Leader><leader>. <Plug>(easymotion-repeat)
 " map <Leader><leader> <Plug>(easymotion-prefix)
+" add new
+map <leader><leader>f  <Plug>(easymotion-f)
+map <leader><leader>F  <Plug>(easymotion-F)
+map <leader><leader>t  <Plug>(easymotion-t)
+map <leader><leader>T  <Plug>(easymotion-T)
+map <leader><leader>w  <Plug>(easymotion-w)
+map <leader><leader>W  <Plug>(easymotion-W)
+map <leader><leader>b  <Plug>(easymotion-b)
+map <leader><leader>B  <Plug>(easymotion-B)
+map <leader><leader>e  <Plug>(easymotion-e)
+map <leader><leader>E  <Plug>(easymotion-E)
+map <leader><leader>ge <Plug>(easymotion-ge)
+map <leader><leader>gE <Plug>(easymotion-gE)
+map <leader><leader>j  <Plug>(easymotion-j)
+map <leader><leader>k  <Plug>(easymotion-k)
+map <leader><leader>n  <Plug>(easymotion-n)
+map <leader><leader>N  <Plug>(easymotion-N)
+map <leader><leader>s  <Plug>(easymotion-s)
 
 " ------------------------------------------------------------------
 "   super tab
