@@ -55,7 +55,7 @@ Plug  'vim-scripts/indentpython.vim' "帮助python格式化代码缩进。
 Plug  'dense-analysis/ale'    "ale git 名修改
 Plug  'nvie/vim-flake8' "python 标准检查插件
 Plug  'majutsushi/tagbar'   "tagbar
-Plug  'jmcantrell/vim-virtualenv' "python virtual 支持
+" Plug  'jmcantrell/vim-virtualenv' "python virtual 支持
 Plug  'tpope/vim-commentary' "快速注释 gc gcc
 Plug  'vim-scripts/DoxygenToolkit.vim'  "生成doxygen风格注释
 Plug  'Shougo/echodoc.vim'
@@ -65,6 +65,7 @@ Plug  'skywind3000/vim-preview'
 Plug  'tpope/vim-unimpaired'   "通过[]快速按键
 Plug  'octol/vim-cpp-enhanced-highlight'
 Plug  'OmniSharp/omnisharp-vim'     " c#支持
+Plug  'luochen1990/rainbow' "彩虹括号
 "-----------------
 " Fast navigation
 "-----------------
@@ -166,6 +167,35 @@ let g:airline#extensions#tabline#show_buffers = 1 "buffer 显示在一个tab忠
 let g:airline#extensions#tabline#show_tabs = 0 " 不显示tab
 let g:airline#extensions#whitespace#enabled = 0 "不显示空白
 " let g:airline#extensions#tabline#alt_sep = 0  " 分隔符
+
+"--------------------------------------------------------------------------------
+" rainbow
+"--------------------------------------------------------------------------------
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+nnoremap <leader>Tr :RainbowToggle<CR>
+
+let g:rainbow_conf = {
+	\	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+	\	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+	\	'operators': '_,_',
+	\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+	\	'separately': {
+	\		'*': {},
+	\		'tex': {
+	\			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/'],
+	\		},
+	\		'lisp': {
+	\			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
+	\		},
+	\		'vim': {
+	\			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
+	\		},
+	\		'html': {
+	\			'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
+	\		},
+	\		'css': 0,
+	\	}
+	\}
 
 "--------------------------------------------------------------------------------
 "easy mothing
