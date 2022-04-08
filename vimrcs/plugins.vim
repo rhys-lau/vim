@@ -209,6 +209,8 @@ let g:rainbow_conf = {
 "--------------------------------------------------------------------------------
 nnoremap <leader>tt :Translate<CR>
 nnoremap <leader>tw :TranslateW<CR>
+vmap <leader>tt :Translate<CR>
+vmap <leader>tw :TranslateW<CR>
 
 "--------------------------------------------------------------------------------
 "easy mothing
