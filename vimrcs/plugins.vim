@@ -144,6 +144,12 @@ let g:indentLine_enabled = 1
 let g:autopep8_disable_show_diff=1
 
 "--------------------------
+" tabular
+"----------------------------
+nmap <leader>xt :Tabularize
+vmap <leader>xt :Tabularize
+
+"--------------------------
 " startify
 "----------------------------
 autocmd User Startified setlocal cursorline
