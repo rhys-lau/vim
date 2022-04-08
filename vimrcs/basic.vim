@@ -92,7 +92,7 @@ set laststatus=2    "命令行为两行"
 "set fenc=utf-8      "文件编码"
 set backspace=2
 set mouse=a        "启用鼠标"
-set nofen     "关闭折叠
+"set nofen     "关闭折叠
 set selection=exclusive
 set selectmode=mouse,key
 set matchtime=5
