@@ -456,7 +456,7 @@ func! MyRun()
 	elseif &filetype == 'cpp'
         call CRun()
     elseif &filetype == 'python'
-        exec "!python %"
+        exec "!python3 %"
     elseif &filetype == 'java'
         exec "!javac % && java %<"
         "exec "!java %<"
