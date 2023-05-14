@@ -1,6 +1,8 @@
 
 # Dependenc
 1. git
+    * 不能下载github 方法,执行
+    git config --global url."https://gitclone.com/github.com/".insteadOf https://git::@github.com/
 2. lsp
     * llvm
     * python-language-server
