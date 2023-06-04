@@ -382,11 +382,13 @@ func! Link()
         redraw!
         if !executable(Exe) || (executable(Exe) && getftime(Exe) < getftime(Obj))
             if expand("%:e") == "c"
-                setlocal makeprg=gcc\ -o\ %<\ %<.o
+                "setlocal makeprg=gcc\ -o\ %<\ %<.o
+                setlocal makeprg=clang\ -o\ %<.exe\ %<.o
                 echohl WarningMsg | echo " linking..."
                 silent make
             elseif expand("%:e") == "cpp" || expand("%:e") == "cxx"
-                setlocal makeprg=g++\ -o\ %<\ %<.o
+                "setlocal makeprg=g++\ -o\ %<\ %<.o
+                setlocal makeprg=clang++\ -o\ %<.exe\ %<.o
                 echohl WarningMsg | echo " linking..."
                 silent make
             endif
