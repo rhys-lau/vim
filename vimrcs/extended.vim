@@ -362,6 +362,14 @@ func! CompileRunGcc()
     exe ":setlocal makeprg=make"
 endfunc
 
+
+"let s:link_CFlags= 'gcc\ -o\ %<.exe\ %<.o'
+"let s:link_CPPFlags= 'g++\ -o\ %<.exe\ %<.o'
+
+let s:link_CFlags= 'clang\ -o\ %<.exe\ %<.o'
+let s:link_CPPFlags= 'clang++\ -o\ %<.exe\ %<.o'
+
+
 func! Link()
     call CompileRunGcc()
     if s:Sou_Error || s:LastShellReturn_C != 0
@@ -383,12 +391,14 @@ func! Link()
         if !executable(Exe) || (executable(Exe) && getftime(Exe) < getftime(Obj))
             if expand("%:e") == "c"
                 "setlocal makeprg=gcc\ -o\ %<\ %<.o
-                setlocal makeprg=clang\ -o\ %<.exe\ %<.o
+                "setlocal makeprg=clang\ -o\ %<.exe\ %<.o
+                exe ":setlocal makeprg=".s:link_CFlags
                 echohl WarningMsg | echo " linking..."
                 silent make
             elseif expand("%:e") == "cpp" || expand("%:e") == "cxx"
                 "setlocal makeprg=g++\ -o\ %<\ %<.o
-                setlocal makeprg=clang++\ -o\ %<.exe\ %<.o
+                "setlocal makeprg=clang++\ -o\ %<.exe\ %<.o
+                exe ":setlocal makeprg=".s:link_CPPFlags
                 echohl WarningMsg | echo " linking..."
                 silent make
             endif
