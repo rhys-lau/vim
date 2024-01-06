@@ -290,17 +290,20 @@ let s:Obj_Extension = '.o'
 let s:Exe_Extension = '.exe'
 let s:Sou_Error = 0
 
-"let s:windows_CFlags = 'gcc\ -std=gnu++0x\ -fexec-charset=gbk\ -Wall\ -g\ -O3\ -c\ %\ -o\ %<.o'
-"let s:linux_CFlags = 'gcc\ -std=gnu++0x\ -Wall\ -g\ -O3\ -c\ %\ -o\ %<.o'
 
-"let s:windows_CPPFlags = 'g++\ -std=gnu++0x\ -fexec-charset=gbk\ -Wall\ -g\ -O3\ -c\ %\ -o\ %<.o'
-"let s:linux_CPPFlags = 'g++\ -std=gnu++0x\ -Wall\ -g\ -O3\ -c\ %\ -o\ %<.o'
+if executable('clang.exe')
+    let s:windows_CFlags = 'clang\ -fexec-charset=utf-8\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
+    let s:linux_CFlags = 'clang\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
 
-let s:windows_CFlags = 'clang\ -fexec-charset=utf-8\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
-let s:linux_CFlags = 'clang\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
+    let s:windows_CPPFlags = 'clang\ -fexec-charset=utf-8\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
+    let s:linux_CPPFlags = 'clang\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
+else
+    let s:windows_CFlags = 'gcc\ -std=gnu++0x\ -fexec-charset=gbk\ -Wall\ -g\ -O3\ -c\ %\ -o\ %<.o'
+    let s:linux_CFlags = 'gcc\ -std=gnu++0x\ -Wall\ -g\ -O3\ -c\ %\ -o\ %<.o'
 
-let s:windows_CPPFlags = 'clang\ -fexec-charset=utf-8\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
-let s:linux_CPPFlags = 'clang\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
+    let s:windows_CPPFlags = 'g++\ -std=gnu++0x\ -fexec-charset=gbk\ -Wall\ -g\ -O3\ -c\ %\ -o\ %<.o'
+    let s:linux_CPPFlags = 'g++\ -std=gnu++0x\ -Wall\ -g\ -O3\ -c\ %\ -o\ %<.o'
+endif
 
 func! CompileRunGcc()
     exe ":ccl"
@@ -366,9 +369,23 @@ endfunc
 "let s:link_CFlags= 'gcc\ -o\ %<.exe\ %<.o'
 "let s:link_CPPFlags= 'g++\ -o\ %<.exe\ %<.o'
 
-let s:link_CFlags= 'clang\ -o\ %<.exe\ %<.o'
-let s:link_CPPFlags= 'clang++\ -o\ %<.exe\ %<.o'
-
+if executable('clang.exe')
+    if g:iswindows
+        let s:link_CFlags= 'clang\ -o\ %<.exe\ %<.o'
+        let s:link_CPPFlags= 'clang++\ -o\ %<.exe\ %<.o'
+    else
+        let s:link_CFlags= 'clang\ -o\ %<\ %<.o'
+        let s:link_CPPFlags= 'clang++\ -o\ %<\ %<.o'
+    endif
+else
+    if g:iswindows
+        let s:link_CFlags= 'gcc\ -o\ %<.exe\ %<.o'
+        let s:link_CPPFlags= 'g++\ -o\ %<.exe\ %<.o'
+    else
+        let s:link_CFlags= 'gcc\ -o\ %<\ %<.o'
+        let s:link_CPPFlags= 'g++\ -o\ %<\ %<.o'
+    endif
+endif
 
 func! Link()
     call CompileRunGcc()
