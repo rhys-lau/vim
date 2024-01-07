@@ -291,7 +291,7 @@ let s:Exe_Extension = '.exe'
 let s:Sou_Error = 0
 
 
-if executable('clang.exe')
+if executable('clang')
     let s:windows_CFlags = 'clang\ -fexec-charset=utf-8\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
     let s:linux_CFlags = 'clang\ -Wall\ -g\ -O0\ -c\ %\ -o\ %<.o'
 
@@ -369,7 +369,7 @@ endfunc
 "let s:link_CFlags= 'gcc\ -o\ %<.exe\ %<.o'
 "let s:link_CPPFlags= 'g++\ -o\ %<.exe\ %<.o'
 
-if executable('clang.exe')
+if executable('clang')
     if g:iswindows
         let s:link_CFlags= 'clang\ -o\ %<.exe\ %<.o'
         let s:link_CPPFlags= 'clang++\ -o\ %<.exe\ %<.o'
