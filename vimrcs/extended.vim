@@ -116,8 +116,8 @@ nmap <leader>;d :cd %:p:h<cr>
 
 nmap <leader>tg <C-W>}
 " programming related
-map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-nmap <leader>tc :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extras=+q .<CR>
+nmap <leader>tc :!ctags -R --c++-kinds=+p --fields=+iaS --extras=+q .<CR>
 nnoremap <silent> <F4> :A<CR>
 " Close the current buffer
 map <leader>bd :Bclose<cr>
