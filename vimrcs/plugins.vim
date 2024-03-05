@@ -66,7 +66,7 @@ Plug  'skywind3000/vim-preview'
 Plug  'tpope/vim-unimpaired'   "通过[]快速按键
 Plug  'octol/vim-cpp-enhanced-highlight'
 Plug  'OmniSharp/omnisharp-vim'     " c#支持
-"Plug  'luochen1990/rainbow' "彩虹括号
+Plug  'luochen1990/rainbow' "彩虹括号
 "-----------------
 " Fast navigation
 "-----------------
