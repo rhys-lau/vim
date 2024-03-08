@@ -121,10 +121,10 @@ if has("gui_running")
   set background=dark
   set t_Co=256
   set background=dark
-  colorscheme evening
+  colorscheme SpaceVim
   set nu
 else
-  colorscheme evening
+  colorscheme SpaceVim
   " colorscheme zellner
   set background=dark
   set nu
