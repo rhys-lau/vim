@@ -100,7 +100,7 @@ Plug  'airblade/vim-rooter'
 " Syntax/Indent for language enhancement
 "----------------------------------------
 "------- web backend ---------
-Plug  '2072/PHP-Indenting-for-VIm' "官方php缩进
+"Plug  '2072/PHP-Indenting-for-VIm' "官方php缩进
 "Bundle 'tpope/vim-rails'
 Plug  'lepture/vim-jinja'  "jinja支持
 "Bundle 'digitaltoad/vim-jade'
