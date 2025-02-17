@@ -4,7 +4,7 @@ set nocompatible              " required
 filetype off                  " required
 
 "source c:/vim/plug.vim
-source $VIMRUNTIME/../plug.vim
+source ~/vim/plug.vim
 call plug#begin('~/plugged')
 
 "------------
@@ -609,7 +609,7 @@ map <leader>Mt <Plug>MarkdownPreviewToggle
 "  ----------------------------------------------------------------
 " vimwiki
 let g:vimwiki_use_mouse = 1
-source $VIMRUNTIME/../vimrcs/wiki-list-default.vim
+source ~/vim/vimrcs/wiki-list-default.vim
 let g:vimwiki_file_exts = 'c, cpp, wav, txt, h, hpp, zip, sh, awk, ps, pdf,md,doc,docx,xls,xlsx'
 " change wiki prefix to v
 let g:vimwiki_map_prefix = '<Leader>v'

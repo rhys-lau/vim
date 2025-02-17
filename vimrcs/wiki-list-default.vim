@@ -12,4 +12,4 @@
 "            \{'path':'D:/Users/Rhys/OneDrive/文档/vimwiki/51.python'},
 "            \{'path':'D:/Users/Rhys/OneDrive/文档/vimwiki/52.c#'}]
 
-source $VIMRUNTIME/../wiki-list.vim
+source ~/vim/wiki-list.vim

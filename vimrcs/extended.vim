@@ -125,11 +125,11 @@ map <leader>bd :Bclose<cr>
 map <leader>ba :%bdelete<cr>
 " nmap <leader>bu :unhide<cr>
 
-map<leader>fve :e! $VIMRUNTIME/../_vimrc<cr>
-map<leader>fvb :e! $VIMRUNTIME/../vimrcs/basic.vim<cr>
-map<leader>fvx :e! $VIMRUNTIME/../vimrcs/extended.vim<cr>
-map<leader>fvp :e! $VIMRUNTIME/../vimrcs/plugins.vim<cr>
-map<leader>fvr :e! $VIMRUNTIME/../README.md<cr>
+map<leader>fve :e! ~/vim/_vimrc<cr>
+map<leader>fvb :e! ~/vim/vimrcs/basic.vim<cr>
+map<leader>fvx :e! ~/vim/vimrcs/extended.vim<cr>
+map<leader>fvp :e! ~/vim/vimrcs/plugins.vim<cr>
+map<leader>fvr :e! ~/vim/README.md<cr>
 map<leader>fw :setlocal wrap<cr>
 map<leader>fW :setlocal nowrap<cr>
 "autocmd! bufwritepost _vimrc source c:/vim/_vimrc

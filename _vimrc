@@ -1,3 +1,3 @@
-source $VIMRUNTIME/../vimrcs/basic.vim
-source $VIMRUNTIME/../vimrcs/extended.vim
-source $VIMRUNTIME/../vimrcs/plugins.vim
+source ~/vim/vimrcs/basic.vim
+source ~/vim/vimrcs/extended.vim
+source ~/vim/vimrcs/plugins.vim
