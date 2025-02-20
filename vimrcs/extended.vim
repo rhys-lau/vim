@@ -64,7 +64,11 @@ function RunPython()
   let mp = &makeprg
   let ef = &errorformat
   let exeFile = expand("%:t")
-  setlocal makeprg=python3\ -u
+  if g:iswindows
+    setlocal makeprg=python\ -u
+  else
+    setlocal makeprg=python3\ -u
+  endif
   set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
   silent make %
   copen
@@ -151,7 +155,11 @@ inoremap <expr> <C-U>      pumvisible()?"\<C-E>":"\<C-U>"
 map  <leader>wqc :cclose<cr>
 map  <leader>wqo :bot copen<cr>
 "  run python
-autocmd BufNewFile,BufRead *.py nmap <F12> :w <cr>:!python3 %<cr>
+if g:iswindows
+    autocmd BufNewFile,BufRead *.py nmap <F12> :w <cr>:!python %<cr>
+else
+    autocmd BufNewFile,BufRead *.py nmap <F12> :w <cr>:!python3 %<cr>
+endif
 
 map <leader>b1 :b1<cr>
 map <leader>b2 :b2<cr>
@@ -485,7 +493,11 @@ func! MyRun()
 	elseif &filetype == 'cpp'
         call CRun()
     elseif &filetype == 'python'
-        exec "!python3 %"
+        if g:iswindows
+            exec "!python %"
+        else
+            exec "!python3 %"
+        endif
     elseif &filetype == 'java'
         exec "!javac % && java %<"
         "exec "!java %<"
