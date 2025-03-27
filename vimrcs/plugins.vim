@@ -53,7 +53,7 @@ Plug  'plasticboy/vim-markdown' "markdown 支持
 " Plug  'iamcco/markdown-preview.vim'  " need python support
 Plug  'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug  'vim-scripts/indentpython.vim' "帮助python格式化代码缩进。
-Plug  'dense-analysis/ale'    "ale git 名修改
+"Plug  'dense-analysis/ale'    "ale git 名修改
 Plug  'nvie/vim-flake8' "python 标准检查插件
 Plug  'majutsushi/tagbar'   "tagbar
 " Plug  'jmcantrell/vim-virtualenv' "python virtual 支持
@@ -875,13 +875,13 @@ let g:ale_cpp_cppcheck_options = ''
 "普通模式下，sp前往上一个错误或警告，sn前往下一个错误或警告
 "nmap sp <Plug>(ale_previous_wrap)
 "nmap sn <Plug>(ale_next_wrap)
-nmap <leader>ap <Plug>(ale_previous_wrap)
-nmap <leader>an <Plug>(ale_next_wrap)
+" nmap <leader>ap <Plug>(ale_previous_wrap)
+" nmap <leader>an <Plug>(ale_next_wrap)
 "<Leader>s触发/关闭语法检查
-nmap <Leader>at :ALEToggle<CR>
-nmap <Leader>aT :ALEToggleBuffer<CR>
+"nmap <Leader>at :ALEToggle<CR>
+"nmap <Leader>aT :ALEToggleBuffer<CR>
 "<Leader>d查看错误或警告的详细信息
-nmap <Leader>ad :ALEDetail<CR>
+"nmap <Leader>ad :ALEDetail<CR>
 "java 中文乱码
 let g:ale_java_javac_options = '-encoding UTF-8  -J-Duser.language=en'
 " auto parse makefile
@@ -1030,7 +1030,7 @@ let g:which_key_map[";"] = {
       \'m':    'mouse mode = a',
       \'M':    'mouse mode = vi',
       \}
-let g:which_key_map.a    = {'name':'+ALE'}
+let g:which_key_map.a    = {'name':'+A'}
 
 let g:which_key_map.b = {
       \ 'name': '+buffer',
