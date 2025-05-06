@@ -15,7 +15,7 @@ Plug  'jiangmiao/auto-pairs' "与vimlsp 有冲突 20201202好像解决了，继�
 Plug  'vim-scripts/Mark--Karkat'
 Plug  'liuchengxu/vim-which-key'
 Plug  'mhinz/vim-startify'
-Plug  'junegunn/goyo.vim'
+" Plug  'junegunn/goyo.vim'
 Plug  'tpope/vim-sensible'
 Plug  'voldikss/vim-translator'
 "--------------------
@@ -67,6 +67,7 @@ Plug  'tpope/vim-unimpaired'   "通过[]快速按键
 Plug  'octol/vim-cpp-enhanced-highlight'
 Plug  'OmniSharp/omnisharp-vim'     " c#支持
 Plug  'luochen1990/rainbow' "彩虹括号
+Plug  'github/copilot.vim'   "github copilot
 "-----------------
 " Fast navigation
 "-----------------
@@ -78,7 +79,7 @@ Plug  'justinmk/vim-sneak' "Jump to any location specified by two characters.
 " IDE features
 "--------------
 Plug  'tpope/vim-fugitive' "git 支持
-Plug  'mhinz/vim-signify'
+Plug  'mhinz/vim-signify' "git diff 支持
 Plug  'bling/vim-airline' "状态栏
 Plug  'vim-airline/vim-airline-themes'
 " Plug  'fholgado/minibufexpl.vim'  "minibuf
@@ -1095,8 +1096,8 @@ let g:which_key_map.g = {
       \ 'e' : ['Gedit'                  , 'fugitive-edit']              ,
       \ 'r' : ['Gread'                  , 'fugitive-read']              ,
       \ 'w' : ['Gwrite'                 , 'fugitive-write']             ,
-      \ 'y' : ['Goyo'                   , 'goyo-mode']         ,
       \}
+" \ 'y' : ['Goyo'                   , 'goyo-mode']         ,
 
 " \ 'P' : ['Gpull'                  , 'fugitive-pull']              ,
 " \ 'p' : ['Gpush'                  , 'fugitive-push']              ,
