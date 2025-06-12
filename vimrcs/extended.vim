@@ -32,6 +32,7 @@ let python_highlight_all=1
 " md txt tmp wiki
 " ------------------------------------------------------------------
 "设置折行 不自动换行
+autocmd FileType text,md,tmp,wiki,markdown,log setlocal textwidth=1000 formatoptions+=t
 au BufNewFile,BufRead *.txt,*.md,*.tmp,*.wiki,*.markdown
 \ setlocal wrap
 
