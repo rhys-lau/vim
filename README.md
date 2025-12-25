@@ -17,10 +17,18 @@
 
 # Install
 1. cmd
+编写.vimrc
 ```
-md c:\vim
+source ~/vim/_vimrc
+```
+clone vim config
+```
+md ~\vim
+cd ~
 git clone https://github.com/rhys-lau/vim.git
 ```
+注意 windows 下~代表用户目录 `C:\Users\你的用户名`
+
 2. copy **Vimtools** Dirctory. Add Path.
 3. input `PlugInstall`。
 4. install tools(option)
