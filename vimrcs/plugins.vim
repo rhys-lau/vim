@@ -17,7 +17,7 @@ Plug  'liuchengxu/vim-which-key'
 Plug  'mhinz/vim-startify'
 " Plug  'junegunn/goyo.vim'
 Plug  'tpope/vim-sensible'
-Plug  'voldikss/vim-translator'
+" Plug  'voldikss/vim-translator'
 "--------------------
 " Code completions
 " -------------------
@@ -208,10 +208,10 @@ let g:rainbow_conf = {
 "--------------------------------------------------------------------------------
 " vim-Translator
 "--------------------------------------------------------------------------------
-nnoremap <leader>tt :Translate<CR>
-nnoremap <leader>tw :TranslateW<CR>
-vmap <leader>tt :Translate<CR>
-vmap <leader>tw :TranslateW<CR>
+" nnoremap <leader>tt :Translate<CR>
+" nnoremap <leader>tw :TranslateW<CR>
+" vmap <leader>tt :Translate<CR>
+" vmap <leader>tw :TranslateW<CR>
 
 "--------------------------------------------------------------------------------
 "easy mothing
@@ -1181,7 +1181,7 @@ let g:which_key_map.S    = {'name':'+session'}
 let g:which_key_map.s    = {'name':'+OmniSharp'}
 
 let g:which_key_map.t    = {
-      \ 'name' : '+tag/translate' ,
+      \ 'name' : '+tag' ,
       \ 'b': 'search-tags-in-current-buffer',
       \ 'B': 'search-tags-in-project',
       \ 'c': 'run-ctags-R',
