@@ -720,7 +720,6 @@ nmap <leader>'0 :SlimeSend0
 " lsc
 " -----------------------------------------------------------------
 imap <c-l> <Plug>(asyncomplete_force_refresh)
-
 "autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 " python pyls
 if executable('pyls')
@@ -771,13 +770,13 @@ if executable('java') && filereadable(expand('~/lsp/eclipse.jdt.ls/plugins/org.e
         \ 'whitelist': ['java'],
         \ })
 endif
-
 let g:asyncomplete_auto_popup = 1
 " c 对中文问题
 let g:lsp_async_completion = 1
 let g:lsp_use_event_queue = 1
 let g:lsp_text_edit_enabled = 1
 let g:lsp_diagnostics_enabled  = 1
+let g:lsp_diagnostics_virtual_text_enabled = 0  "关闭virtual_line
 let g:lsp_signature_help_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 " let g:lsp_signs_priority = 11
