@@ -484,7 +484,7 @@ endif
 " ----------------------------------------
 " vim-rooter
 " ----------------------------------------
-let g:rooter_patterns = ['.vs/','Rakefile', '.git/','.root/']
+let g:rooter_patterns = ['.vs/','Rakefile', '.git/','.root/','.svn/','.vscode/']
 let g:rooter_manual_only = 1
 nmap <leader>pg :Rooter<cr>
 nmap <leader>ps :Rooter <cr>
