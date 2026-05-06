@@ -91,7 +91,8 @@ Plug  'skywind3000/asyncrun.vim'  "异步操作
 Plug  'junegunn/vim-easy-align'
 Plug  'jpalardy/vim-slime'
 Plug  'ntpeters/vim-better-whitespace'
-Plug  'kien/ctrlp.vim'             "c-p后调出窗口快速跳转文件及buf
+"Plug  'kien/ctrlp.vim'             "c-p后调出窗口快速跳转文件及buf
+Plug  'ctrlpvim/ctrlp.vim'
 Plug  'tacahiroy/ctrlp-funky'      " func支持
 Plug  'liuchengxu/vista.vim'
 Plug  'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
