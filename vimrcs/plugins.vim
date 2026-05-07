@@ -184,7 +184,7 @@ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 nnoremap <leader>Tr :RainbowToggle<CR>
 
 let g:rainbow_conf = {
-	\	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+	\	'guifgs': ['lightblue', 'darkorange3', 'seagreen3', 'lightmagenta'],
 	\	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
 	\	'operators': '_,_',
 	\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
@@ -203,6 +203,7 @@ let g:rainbow_conf = {
 	\			'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
 	\		},
 	\		'css': 0,
+	\		'nerdtree': 0,
 	\	}
 	\}
 
