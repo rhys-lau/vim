@@ -293,7 +293,14 @@ let g:tagbar_width = 25
 " --------------------------------------------------
 " gutentags 搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project','.vs','.vscode']
-
+let g:gutentags_ctags_exclude = [
+    \ '.git',
+    \ '.svn',
+    \ '.opencode',
+    \ 'node_modules',
+    \ 'vendor',
+    \ 'build'
+    \ ]
 " 所生成的数据文件的名称
 let g:gutentags_ctags_tagfile = '.tags'
 
